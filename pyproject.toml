@@ -1,0 +1,19 @@
+[project]
+name = "markdown2epub"
+version = "0.1.0"
+description = "A simple CLI tool to convert markdown files to epub format."
+readme = "README.md"
+authors = [
+    { name = "Patryk Kubiak", email = "Patryk.Kubiak@gmail.com" }
+]
+requires-python = ">=3.9"
+dependencies = [
+    "click>=8.1.7",
+]
+
+[project.scripts]
+markdown2epub = "markdown2epub.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
